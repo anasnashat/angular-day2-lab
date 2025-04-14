@@ -1,1 +1,16 @@
-<p>nav-bar works!</p>
+<nav class="navbar bg-body-tertiary">
+  <div class="container d-flex justify-content-between p-2">
+    <a class="navbar-brand" href="#">
+      <img [src]="imageUrl" alt="Bootstrap" width="50" height="50">
+    </a>
+    <ul>
+      <ul class="nav-item d-flex align-items-center gap-5">
+
+      @for (link of links; track $index) {
+          <li class="nav-link fs-3" >{{ link.name }}</li>
+      }
+      </ul>
+
+    </ul>
+  </div>
+</nav>

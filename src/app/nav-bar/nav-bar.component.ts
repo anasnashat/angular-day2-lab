@@ -7,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrl: './nav-bar.component.css'
 })
 export class NavBarComponent {
+  title = "First App";
+  links:{name:string}[]=[
+    {name:'Home'},
+    {name:'About'},
+    {name:'Contact'},
+  ];
+  imageUrl:string = 'images/img.png';
+
 
 }
