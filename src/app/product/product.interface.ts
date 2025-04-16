@@ -1,4 +1,4 @@
-export interface product {
+export interface ProductInterface {
   name:string,
   imageUrl:string,
   price:number,
