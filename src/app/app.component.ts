@@ -14,7 +14,5 @@ import {FooterComponent} from './footer/footer.component';
 export class AppComponent {
   title = 'testApp';
 
-  addToCart(product: any) {
-    console.log('Product added to cart:', product);
-  }
+
 }
