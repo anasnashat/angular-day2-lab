@@ -11,7 +11,7 @@ export class ProductCardComponent {
 
   title= "ProductCard";
   // @Input() product: ProductInterface={} as ProductInterface;
-  product= input<ProductInterface>({stock: 0, price: 0, name: '', imageUrl: ''} );
+  product= input<ProductInterface>();
   // constructor() {
   //   console.log(this.product?.name);
   // }
