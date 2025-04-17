@@ -7,7 +7,8 @@
       <ul class="nav-item d-flex align-items-center gap-5">
 
       @for (link of links; track $index) {
-          <li class="nav-link fs-3" >{{ link.name }}</li>
+          <li class="nav-link fs-3" > <a [routerLink]="link.url"> {{ link.name }} </a></li>
+
       }
       </ul>
 
