@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import {CategoryInterface} from './category.interface';
+import {ProductInterface} from '../product/product.interface';
+import {ProductsService} from '../products.service';
 
 @Component({
   selector: 'app-category',
@@ -9,16 +11,12 @@ import {CategoryInterface} from './category.interface';
 })
 
 export class CategoryComponent {
-  categories: CategoryInterface[] = [
-    {
-      name: 'cat1',
-      image: "images/img.png",
-      numberOfProducts: 100,
-    },
-    {
-      name: 'cat2',
-      image: "images/img.png",
-      numberOfProducts: 200,
-    }
-  ]
+  title = "Categories";
+  categories!: ProductInterface[];
+
+  constructor(Categories: ProductsService) {
+    this.categories = Categories.categories;
+    console.log(this.categories);
+  }
+
 }
